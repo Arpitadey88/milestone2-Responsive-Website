@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px 40px;
+
+            /* grid-template-columns: 200px 200px 200px 200px; */
+            /* grid-template-columns: repeat(4, 200px); */
+            /* fraction use is standard for responsive */
+            /* 1fr(fraction)=25%. if i want every coloumn with 25% i have to use this(repeat 4/5/6...,1fr). and I can use any of these among them give me the same result.*/
+
+        }
+
+        .grid-cell {
+            font-size: 1.5em;
+            border: 3px solid goldenrod;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exploring Grid</h1>
+    <div class="grid-container">
+        <div class="grid-cell">cell number1</div>
+        <div class="grid-cell">cell number2</div>
+        <div class="grid-cell">cell number3</div>
+        <div class="grid-cell">cell number4</div>
+        <div class="grid-cell">cell number5</div>
+        <div class="grid-cell">cell number6</div>
+        <div class="grid-cell">cell number7</div>
+        <div class="grid-cell">cell number8</div>
+        <div class="grid-cell">cell number9</div>
+        <div class="grid-cell">cell number10</div>
+        <div class="grid-cell">cell number11</div>
+        <div class="grid-cell">cell number12</div>
+    </div>
+</body>
+
+</html>

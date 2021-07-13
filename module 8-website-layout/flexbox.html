@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            border: 3px solid green;
+            font-weight: bold;
+        }
+
+        .container-1 {
+            height: 100px;
+            border: 4px dotted mediumvioletred;
+            display: flex;
+        }
+
+        .container-2 {
+            height: 100px;
+            border: 4px dotted mediumblue;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .container-3 {
+            height: 100px;
+            border: 4px dotted red;
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+
+        .container-4 {
+            height: 100px;
+            border: 4px dotted purple;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .container-5 {
+            height: 100px;
+            border: 4px dotted mediumturquoise;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container-0 {
+            height: 100px;
+            border: 4px dotted coral;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .container-both {
+            height: 100px;
+            border: 4px dotted coral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-6 {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .boxI {
+            width: 50px;
+            border: 3px dotted firebrick;
+            font-weight: bold;
+        }
+
+        #box1 {
+            order: 2;
+        }
+
+        #box2 {
+            order: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I am flexible right now- (JUSTIFY-CONTENT-horizontal)(ALIGN-ITEMS-vertical)</h1>
+    <h1>(align-items)+(justify-content) : center</h1>
+    <div class="container-both">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <!-- <div class="box">BOX-4</div> -->
+    </div>
+    <br>
+    <h1>align-items-center</h1>
+    <div class="container-0">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <!-- <div class="box">BOX-4</div> -->
+    </div>
+    <h1>display:flex(by default)</h1>
+    <div class="container-1">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <!-- <div class="box">BOX-4</div> -->
+    </div>
+    <br>
+    <h1>justify-conntent:flex-end</h1>
+    <div class="container-2">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <!-- <div class="box">BOX-4</div> -->
+    </div>
+    <br>
+    <h1> justify-conntent:space-between</h1>
+    <div class="container-3">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <!-- <div class="box">BOX-4</div> -->
+    </div>
+    <br>
+    <h1>justify-conntent:space-evenly</h1>
+    <div class="container-4">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <!-- <div class="box">BOX-4</div> -->
+    </div>
+    <br>
+    <h1>justify-conntent:space-around</h1>
+    <div class="container-5">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <!-- <div class="box">BOX-4</div> -->
+    </div>
+    <br>
+    <h1>align-items: Strech</h1>
+    <div class="container-6">
+        <div id="box1" class="boxI">BOX-1</div>
+        <div id="box2" class="boxI">BOX-2</div>
+    </div>
+
+</body>
+
+</html>
